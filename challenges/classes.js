@@ -29,20 +29,19 @@ console.log(newCuboid.surfaceArea()); // 130
 class CubeMaker extends NewCuboidMaker {
     constructor(cubeAttrs) {
         super(cubeAttrs);
+        this.side = cubeAttrs.side;
     }
     volumeForCube() {
-        return this.length * this.length * this.length;
+        return this.side * this.side * this.side;
     }
     surfaceAreaForCube() {
-        return 6 * this.length * this.length;
+        return 6 * this.side * this.side;
     }      
 }
 
 const newCube = new CubeMaker({
-    length: 4,
-    width: 4,
-    height: 4,
+    side: 4,
   });
 
-console.log(newCube.volume());
-console.log(newCube.surfaceArea());
+console.log(newCube.volumeForCube());
+console.log(newCube.surfaceAreaForCube());
