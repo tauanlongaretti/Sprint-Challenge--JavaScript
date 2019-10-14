@@ -34,11 +34,11 @@ The biggest difference is that unlike .forEach, .map creates a new array with th
 
 2. What is the difference between a function and a method?
 
-The difference between a function and a method is that though a method is also a function, it may be found inside a an object as a value for example.
+The difference between a function and a method is that though a method is also a function, it may be found inside an object as a value for example.
 
 3. What is closure?
 
-Closure gives you access to outer scopes when trying to access variables for example.
+Closure gives you access to outer scopes, for example: having access to variables that are present in a parent function.
 
 4. Describe the four rules of the 'this' keyword.
 
@@ -49,7 +49,7 @@ Explicit rule overrides what the this keyword is bound to through using .call .a
 
 5. Why do we need super() in an extended class?
 
-We need super() in order to call the parent contructor to access it's functions.
+We need super() in order to call the parent constructor to access it's functions.
 
 
 ## Project Set up
